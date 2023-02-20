@@ -26,7 +26,7 @@ class PlacesController < ApplicationController
       def update
         @place = Place.find_by({ "id" => params["id"] })
         @place["name"] = params["place"]["name"]
-        @company.save
+        @place.save
         redirect_to "/places"
       end
     
