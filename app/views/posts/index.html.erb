@@ -1,0 +1,9 @@
+<div class="row">
+  <% for post in @posts %>
+    <div class="col-3">
+      <h4><%= post["title"] %></h4>
+      <h4><%= post["posted_on"] %></h4>
+      <p><%= post["description"] %></p>
+    </div>
+  <% end %>
+</div>
